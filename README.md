@@ -7,12 +7,16 @@ Adicionalmente bajo el nombre de cada presentación se dispondrán recursos nece
 
 ## Como Ser Hacker Sin Terminar En Colina 2 
 En esta charla se demostró en una exposición como conseguir diferentes FLAGs en una máquina vulnerable.
-la explicación y comandos están contenidos en la misma presentación.
+La explicación y comandos están contenidos en la misma presentación.
 para descargar la PPT, pueden hacer click [acá](https://github.com/academiasIT/ciberseguridad/raw/master/ComoSerHackerSinTerminarEnColina2%20-%20LosAngeles.pptx).
 
 ## Presentación OracleDay Talca 2018
 El objetivo de esta presentación fué vulnerar un blog wordpress con pobre configuración de seguridad.
 Para ello se utilizó un ambiente virtualizado con VirtualBox y dos máquinas virtuales, una [Kali Linux]( http://cdimage.kali.org/kali-2018.1/kali-linux-2018.1-amd64.iso) y una máquina vulnerable de [vulnhub](https://www.vulnhub.com/) llamada [DerpNStink]( https://www.dropbox.com/s/8jqor3tuc3jhe1w/VulnHub2018_DeRPnStiNK.ova?dl=0).
+
+Mediante la herramienta WPScan se detectaron los plugin vulnerables y con la misma herramienta se enumeró a los usuarios del blog.
+
+Finalmente uno de los pluguin explicados, permitió explotar la máquina.
 
 La presentación puede ser descargada directamente de [acá](https://github.com/academiasIT/ciberseguridad/raw/master/TalcaOracleDay12-04-2018.pptx).
 
