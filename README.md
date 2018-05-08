@@ -5,7 +5,7 @@
 En esta sección dejaremos las presentaciones realizadas en sedes de la [Universidad Tecnológica de Chile INACAP](http://www.inacap.cl) y otros lugares.
 Adicionalmente bajo el nombre de cada presentación se dispondrán recursos necesarios de cada taller o charla.
 
-## Taller de Seguridad (Etical Hacking) Copiapó 2018
+## Taller de Seguridad (Ethical Hacking) Copiapó 2018
 [Wordpress](https://wordpress.com) es un sistema de gestión de contenido muy popular. Es potente y flexible, debido a que permite la instalación de multiples plugins. El problema es que cada nuevo plugin instalado en wordpress puede abrir una potencial brecha de seguridad. En este taller exploraremos de una manera práctica las vulnerabilidades de wordpress mediante un ataque Paso-a-Paso desde un [Kali Linux]( http://cdimage.kali.org/kali-2018.1/kali-linux-2018.1-amd64.iso) a una máquina de [vulnhub](https://www.vulnhub.com/) llamada [DerpNStink]( https://www.dropbox.com/s/8jqor3tuc3jhe1w/VulnHub2018_DeRPnStiNK.ova?dl=0). La presentación con los comandos puede ser descargada [acá](https://github.com/academiasIT/ciberseguridad/blob/master/CopiapoSI_9y10-05-2018.pdf).
 
 ## Como Ser Hacker Sin Terminar En Colina 2 
