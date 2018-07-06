@@ -23,11 +23,17 @@ Dentro de un proceso de análisis de vulnerabilidades, es necesario seguir una m
 Dentro de esta fase, es necesario tener en cuenta los datos de la máquina atacante como de la victima.
 Desde el punto de vista del atacante es necesario conocer la IP del segmento al que está conectado
 para poder revisar máquinas vulnerables.
-El comando en Linux para revisar la IP es: ifconfig
+El comando en Linux para revisar la IP es ifconfig
+
+`# ifconfig`
+
 ![](https://github.com/academiasIT/ciberseguridad/blob/master/img/1-ifconfig.gif)
 Una vez que ya tenemos la ip, debemos revisar nuestro entorno de red mediante
 la famosa herramienta nmap.
 Usamos nmap de la siguiente manera:
+
+`# nmap 10.0.2.0/24 -T4 -sS`
+
 ![](https://github.com/academiasIT/ciberseguridad/blob/master/img/2-nmapRed.gif)
 Recordar que los parámetros -T4 hacen un escaneo rápido y -sS permite identificación de servicios asociados a los puertos.
 Como podemos ver en la salida del comando, se encontró la IP 10.0.2.8 con 3 puertos abiertos: 21, 22 y 80.
@@ -37,7 +43,7 @@ Luego, entramos a verificar que archivos interesante podemos encontrar en el ser
 Esto se hace mediante el conjunto de herramientas o scripts del mismo nmap.
 usaremos el comando:
 
-`nmap -script http-enum 10.0.2.8`
+`# nmap -script http-enum 10.0.2.8`
 
 ![](https://github.com/academiasIT/ciberseguridad/blob/master/img/4-http-enum.gif)
 
