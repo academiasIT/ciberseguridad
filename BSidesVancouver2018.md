@@ -89,6 +89,13 @@ Lamentablemente no hay resultados con el admin, procedemos a probar con el otro 
 ![](https://github.com/academiasIT/ciberseguridad/blob/master/img/11-password.png)
 Acá si tenemos éxito logrando la clave `enigma` para el usuario `john`
 ![](https://github.com/academiasIT/ciberseguridad/blob/master/img/12-accesoWP.png)
+Entramos al editor del tema de wordpress
+![](https://github.com/academiasIT/ciberseguridad/blob/master/img/13-EditorWP.png)
+Ponemos un regalito (Shell reversa para php) en el `comments.php` y luego preparamos en la máquina atacante un listener para recibir la conexión.
+![](https://github.com/academiasIT/ciberseguridad/blob/master/img/14-ShellReversaPhp.png)
+Y luego obtenemos la conexión en la máquina atacante para lograr acceso a la máquina victima.
+![](https://github.com/academiasIT/ciberseguridad/blob/master/img/15-AccesoShell.gif)
+
 ## Fase de Documentación
 
 
