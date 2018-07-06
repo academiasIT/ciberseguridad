@@ -20,8 +20,19 @@ Particularmente se trabajará con los siguientes recursos:
 Dentro de un proceso de análisis de vulnerabilidades, es necesario seguir una metodología que permita hacer que el proceso sea repetible 
 
 ## Fase de Recolección de Información y Enumeración
-
-
+Dentro de esta fase, es necesario tener en cuenta los datos de la máquina atacante como de la victima.
+Desde el punto de vista del atacante es necesario conocer la IP del segmento al que está conectado
+para poder revisar máquinas vulnerables.
+El comando en Linux para revisar la IP es: ifconfig
+![](https://github.com/academiasIT/ciberseguridad/blob/master/img/1-ifconfig.gif)
+Una vez que ya tenemos la ip, debemos revisar nuestro entorno de red mediante
+la famosa herramienta nmap.
+Usamos nmap de la siguiente manera:
+![](https://github.com/academiasIT/ciberseguridad/blob/master/img/2-nmapRed.gif)
+Recordar que los parámetros -T4 hacen un escaneo rápido y -sS permite identificación de servicios asociados a los puertos.
+Como podemos ver en la salida del comando, se encontró la IP 10.0.2.8 con 3 puertos abiertos: 21, 22 y 80.
+Como primer paso verificaremos mediante navegador que hay detras de ese servicio http.
+![](https://github.com/academiasIT/ciberseguridad/blob/master/img/3-webhttp.gif)
 
 ## Fase de Análisis
 
