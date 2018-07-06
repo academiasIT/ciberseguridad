@@ -16,6 +16,7 @@ Particularmente se trabajará con los siguientes recursos:
 1. Maquina virtual Vulnerable [Descarga](https://www.dropbox.com/s/j3r9l7kaydwsdm9/BSides-Vancouver-2018-Workshop.ova)
 1. Las máquinas virtuales deben estar en una red común para poder conectarse.
 
+El objetivo principal consiste en ganar permisos de ROOT sobre la máquina victima.
 
 Dentro de un proceso de análisis de vulnerabilidades, es necesario seguir una metodología que permita hacer que el proceso sea repetible 
 
@@ -57,10 +58,34 @@ Finalmente vemos como existe un Wordpress hosteado en la IP victima.
 ![](https://github.com/academiasIT/ciberseguridad/blob/master/img/6-WordPress.png)
 
 ## Fase de Análisis
+Bueno, a esta altura ya conocemos a nuestra victima, sabemos su IP `10.0.2.8` y sabemos que hostea un sitio en wordpress.
+además se nos indica que está desactualizado.
+Acá comenzamos a planear la estrategia y los diferentes escenarios. 
+Como sabemos, wordpress es una herramienta que permite implementar blog y sitios de manera simple. Adicionalmente permite ser extendido mediante el uso de diferentes plugins.
 
-
+Dentro de la distribución Kali Linux existe una herramienta denominada WPSCAN que nos permitirá auditar el sitio wordpress.
+Justamente esto utilizaremos en la etapa de explotación.
 
 ## Fase de Explotación
+
+Mediante WPSCAN procedemos a auditar el sitio worpress usando los parámetros específicos para enumerar usuarios.
+
+`# wpscan -u 10.0.2.8/backup_wordpress --enumerate u`
+
+![](https://github.com/academiasIT/ciberseguridad/blob/master/img/7-enumeracionUsuarios.gif)
+
+La herramienta nos entrega dos usuarios y sus respectivas contraseñas:
+
+![](https://github.com/academiasIT/ciberseguridad/blob/master/img/8-UsuariosWP.png)
+
+Intentamos loguearnos en `10.0.2.8/backup_wordpress/wp-admin` pero ninguno de los usuarios funciona.
+
+![](https://github.com/academiasIT/ciberseguridad/blob/master/img/9-LoginWordpress.png)
+
+Pero como ya tenemos los usuarios, implementamos un ataque de fuerza bruta, ayudados de la misma herramienta WPSCAN
+![](https://github.com/academiasIT/ciberseguridad/blob/master/img/10.1-bruteforceAdmin.gif)
+![](https://github.com/academiasIT/ciberseguridad/blob/master/img/10.2-bruteforceAdmin.png)
+Lamentablemente no hay resultados con el admin, procedemos a probar con el otro usuario.
 
 ## Fase de Documentación
 
