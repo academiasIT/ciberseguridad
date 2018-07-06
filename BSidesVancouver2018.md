@@ -20,6 +20,7 @@ Particularmente se trabajará con los siguientes recursos:
 Dentro de un proceso de análisis de vulnerabilidades, es necesario seguir una metodología que permita hacer que el proceso sea repetible 
 
 ## Fase de Recolección de Información y Enumeración
+
 Dentro de esta fase, es necesario tener en cuenta los datos de la máquina atacante como de la victima.
 Desde el punto de vista del atacante es necesario conocer la IP del segmento al que está conectado
 para poder revisar máquinas vulnerables.
@@ -47,8 +48,17 @@ usaremos el comando:
 
 ![](https://github.com/academiasIT/ciberseguridad/blob/master/img/4-http-enum.gif)
 
+Si miramos con atención la salida del comando, nos damos cuenta que hay un archivo denominado `robots.txt` 
+
+![](https://github.com/academiasIT/ciberseguridad/blob/master/img/5-robotsTxt.png)
+
+Finalmente vemos como existe un Wordpress hosteado en la IP victima.
+
+![](https://github.com/academiasIT/ciberseguridad/blob/master/img/6-WordPress.png)
 
 ## Fase de Análisis
+
+
 
 ## Fase de Explotación
 
