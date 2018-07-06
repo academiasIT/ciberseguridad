@@ -85,8 +85,9 @@ Intentamos loguearnos en `10.0.2.8/backup_wordpress/wp-admin` pero ninguno de lo
 Pero como ya tenemos los usuarios, implementamos un ataque de fuerza bruta, ayudados de la misma herramienta WPSCAN
 ![](https://github.com/academiasIT/ciberseguridad/blob/master/img/10.1-bruteforceAdmin.gif)
 ![](https://github.com/academiasIT/ciberseguridad/blob/master/img/10.2-bruteforceAdmin.png)
-Lamentablemente no hay resultados con el admin, procedemos a probar con el otro usuario.
-
+Lamentablemente no hay resultados con el admin, procedemos a probar con el otro usuario `john`.
+![](https://github.com/academiasIT/ciberseguridad/blob/master/img/11-password.png)
+Acá si tenemos éxito logrando la clave `enigma` para el usuario `john`
 ## Fase de Documentación
 
 
