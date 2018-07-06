@@ -88,6 +88,7 @@ Pero como ya tenemos los usuarios, implementamos un ataque de fuerza bruta, ayud
 Lamentablemente no hay resultados con el admin, procedemos a probar con el otro usuario `john`.
 ![](https://github.com/academiasIT/ciberseguridad/blob/master/img/11-password.png)
 Acá si tenemos éxito logrando la clave `enigma` para el usuario `john`
+![](https://github.com/academiasIT/ciberseguridad/blob/master/img/12-accesoWP.png)
 ## Fase de Documentación
 
 
