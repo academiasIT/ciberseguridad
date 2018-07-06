@@ -33,6 +33,14 @@ Recordar que los parámetros -T4 hacen un escaneo rápido y -sS permite identifi
 Como podemos ver en la salida del comando, se encontró la IP 10.0.2.8 con 3 puertos abiertos: 21, 22 y 80.
 Como primer paso verificaremos mediante navegador que hay detras de ese servicio http.
 ![](https://github.com/academiasIT/ciberseguridad/blob/master/img/3-webhttp.gif)
+Luego, entramos a verificar que archivos interesante podemos encontrar en el servidor http.
+Esto se hace mediante el conjunto de herramientas o scripts del mismo nmap.
+usaremos el comando:
+
+`nmap -script http-enum 10.0.2.8`
+
+![](https://github.com/academiasIT/ciberseguridad/blob/master/img/4-http-enum.gif)
+
 
 ## Fase de Análisis
 
