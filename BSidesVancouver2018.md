@@ -14,5 +14,22 @@ Particularmente se trabajará con los siguientes recursos:
 1. VirtualBox Pre-Instalado.
 1. [Kali Linux](https://www.kali.org/downloads/) para su arquitectura.
 1. Maquina virtual Vulnerable [Descarga](https://www.dropbox.com/s/j3r9l7kaydwsdm9/BSides-Vancouver-2018-Workshop.ova)
+1. Las máquinas virtuales deben estar en una red común para poder conectarse.
 
+
+Dentro de un proceso de análisis de vulnerabilidades, es necesario seguir una metodología que permita hacer que el proceso sea repetible 
+
+## Fase de Recolección de Información y Enumeración
+
+
+
+## Fase de Análisis
+
+## Fase de Explotación
+
+## Fase de Documentación
+
+
+
+@agustin_salas_f
 [Universidad Tecnológica de Chile INACAP](http://www.inacap.cl).
