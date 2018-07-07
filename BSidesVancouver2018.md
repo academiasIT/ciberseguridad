@@ -157,7 +157,7 @@ Y por último ingresamos directamente a la Máquina virtual, mediante el usuario
 
 ## Fase de Documentación
 
-En esta fase, se presenta un documento formal, como este mismo, presentando las evidencias y dando a entender los procesos y/o fallas descubiertas con el fin de ser solucionadas. En este caso la recomendación es usar claves mucho más complicadas, dado que esto impide o relentiza el proceso de fuerza bruta.
+En esta fase, se presenta un documento formal, como este mismo. Demostrando las evidencias y dando a entender los procesos y/o fallas descubiertas con el fin de ser solucionadas. En este caso la recomendación es: usar claves mucho más complejas, dado que esto impide o relentiza el proceso de fuerza bruta.
 
 # ESTO ES EL FIN
 
