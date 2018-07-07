@@ -3,9 +3,7 @@
 
 # Taller de Hacking Ético - Los Ángeles - Julio 2018. 
 
-El fin de este taller práctico consiste en dar a conocer ciertas técnicas que permiten vulnerar la seguridad de serviodes/servicios. Con ello poder dotar del conocimiento necesario para que los asistentes, puedan asegurar su propia infraestructura.
-
-Este taller es con fines educacionales.
+El fin de este taller práctico consiste en dar a conocer ciertas técnicas que permiten vulnerar la seguridad de serviodes/servicios. Con ello poder dotar del conocimiento necesario para que los asistentes, puedan asegurar su propia infraestructura. Este taller es desarrollado solo con fines educacionales.
 
 Particularmente se trabajará con los siguientes recursos:
 
