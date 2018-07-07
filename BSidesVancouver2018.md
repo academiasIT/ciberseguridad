@@ -14,21 +14,21 @@ Particularmente se trabajará con los siguientes recursos:
 1. Maquina virtual Vulnerable [Descarga](https://www.dropbox.com/s/j3r9l7kaydwsdm9/BSides-Vancouver-2018-Workshop.ova)
 1. Las máquinas virtuales deben estar en una red común para poder conectarse.
 
-El objetivo principal consiste en ganar permisos de ROOT sobre la máquina victima.
+El objetivo principal consiste en ganar permisos de super usuario (ROOT) sobre la máquina victima.
 
-Dentro de un proceso de análisis de vulnerabilidades, es necesario seguir una metodología que permita hacer que el proceso sea repetible por ello, el ataque se separa en las fases Recolección y Enumeración, Análisis, Explotación y Documentación.
+Dentro de un proceso de análisis de vulnerabilidades, es necesario seguir una metodología que permita hacer que el proceso sea repetible. Por ello, el ataque se separa en las siguientes fases Recolección/Enumeración, Análisis, Explotación y Documentación.
 
 ## Fase de Recolección de Información y Enumeración
 
-Dentro de esta fase, es necesario tener en cuenta los datos de la máquina atacante como de la victima.
-Desde el punto de vista del atacante es necesario conocer la IP del segmento al que está conectado
-para poder revisar máquinas vulnerables.
-El comando en Linux para revisar la IP es: `ifconfig`
+Dentro de esta fase, es necesario tener en cuenta los datos de la máquina atacante como de la victima. Lograr la mayor cantidad de información del objetivo mediante la obtención de datos desde fuentes abiertas como desde escaneos pasivos y activos.
+En este caso particular, trabajamos con una máquina virtual, por lo que pasaremos directamente al escaneo activo.
+Desde el punto de vista del atacante es necesario conocer la IP del segmento de red al que está conectado. Una vez obtenida esa IP podemos revisar otras IPs correspondientes a máquinas vulnerables.
+El comando en Linux para revisar la IP es: `ifconfig` este comando debe ser ejecutado en una consola de comandos, tal como se muestra a continuación.
 
 ![](https://github.com/academiasIT/ciberseguridad/blob/master/img/1-ifconfig.gif)
-Una vez que ya tenemos la ip, debemos revisar nuestro entorno de red mediante
-la famosa herramienta nmap.
-Usamos el comando de la siguiente manera:
+
+Una vez que ya tenemos nuestra propia IP, debemos revisar nuestro entorno de red mediante la famosa herramienta nmap.
+Usamos el comando en consola de la siguiente manera:
 
 `# nmap 10.0.2.0/24 -T4 -sS`
 
@@ -36,32 +36,35 @@ Usamos el comando de la siguiente manera:
 
 Recordar que los parámetros -T4 hacen un escaneo rápido y -sS permite identificación de servicios asociados a los puertos.
 Como podemos ver en la salida del comando, se encontró la IP 10.0.2.8 con 3 puertos abiertos: 21, 22 y 80.
-Como primer paso verificaremos mediante navegador qué hay detras de ese servicio http.
+Como primer paso abrimos un navegador en Kali Linux y verificamos la que sitio existe en la IP victima.
+
+Lo único que encontramos es la típica página indicando que existe un servidor web y se encuntra funcionando.
 
 ![](https://github.com/academiasIT/ciberseguridad/blob/master/img/3-webhttp.gif)
 
-Luego, entramos a verificar si existen archivos interesante en el servidor http.
-Esto se hace mediante el conjunto de herramientas o scripts del mismo nmap.
-usaremos el comando: 
+Luego, entramos a verificar si existen archivos interesante en el servidor http. Esto se hace mediante el conjunto de herramientas o scripts del mismo nmap.
+usaremos el comando siguiente: `# nmap -script http-enum 10.0.2.8`
 
-`# nmap -script http-enum 10.0.2.8`
+Este comando nos permite enumerar mediante fuerza bruta, los archivos presentes en el sitio web.
+
+Si miramos con atención la salida del comando, nos damos cuenta que hay un archivo denominado `robots.txt`
 
 ![](https://github.com/academiasIT/ciberseguridad/blob/master/img/4-http-enum.gif)
-
-Si miramos con atención la salida del comando, nos damos cuenta que hay un archivo denominado `robots.txt` 
+ 
+Una vez más abrimos el navegador e introducimos `10.0.2.8/robots.txt`
+Finalmente comprobamos la existencia de un Wordpress hosteado en la máquina victima. 
 
 ![](https://github.com/academiasIT/ciberseguridad/blob/master/img/5-robotsTxt.png)
 
-Finalmente comprobamos la existencia de un Wordpress hosteado en la máquina victima.
+El sitio wordpress se encuentra en `10.0.2.8/backup_wordpress`
 
 ![](https://github.com/academiasIT/ciberseguridad/blob/master/img/6-WordPress.png)
 
 ## Fase de Análisis
-Bueno, a esta altura ya conocemos a nuestra victima, sabemos su IP `10.0.2.8` y sabemos que hostea un sitio en wordpress.
-además se nos indica que está desactualizado.
+Bueno, a esta altura ya conocemos a nuestra IP `10.0.2.5` y la IP de la victima `10.0.2.8`, además sabemos que hostea un sitio en wordpress. También se nos indica que el wordpress está desactualizado.
 
-Acá comenzamos a planear la estrategia y los diferentes escenarios. 
-Como sabemos, wordpress es una herramienta que permite implementar blogs y sitios de manera simple. Adicionalmente permite ser extendido mediante el uso de diferentes plugins. Muchas veces esos plugins introducen brechas de seguridad al ser instalados o simplemente se usan contraseñas débiles para acceder a la administración del Wordpress.
+Acá comenzamos a planear la estrategia y los diferentes escenarios de ataques. 
+Como sabemos, wordpress es una herramienta que permite implementar blogs y sitios de manera simple. Adicionalmente permite ser extendido mediante el uso de diferentes plugins. Muchas veces esos plugins introducen brechas de seguridad al ser instalados o simplemente se usan contraseñas débiles para acceder a la administración del Wordpress `10.0.2.8/backup_wordpress/wp-admin`.
 
 Dentro de la distribución Kali Linux existe una herramienta denominada WPSCAN que nos permitirá auditar el sitio wordpress.
 Justamente esto utilizaremos en la etapa de explotación.
@@ -83,7 +86,7 @@ Intentamos loguearnos en `10.0.2.8/backup_wordpress/wp-admin` pero ninguno de lo
 ![](https://github.com/academiasIT/ciberseguridad/blob/master/img/9-LoginWordpress.png)
 
 Pero como ya tenemos los usuarios, por lo cual podemos implementar un ataque de fuerza bruta. 
-Nos ayudamos de la misma herramienta WPSCAN para proceder con este ataque.
+Nos ayudamos de la misma herramienta WPSCAN para proceder con este ataque, sobre el usuario Admin.
 
 ![](https://github.com/academiasIT/ciberseguridad/blob/master/img/10.1-bruteforceAdmin.gif)
 
@@ -97,13 +100,15 @@ Ahora procedemos a probar con el otro usuario `john`.
 
 Acá si tenemos éxito logrando la clave `enigma` para el usuario `john`
 
+Procedemos a loguear en la administración del sitio wordpress con el usuario y clave ingresado.
+
 ![](https://github.com/academiasIT/ciberseguridad/blob/master/img/12-accesoWP.png)
 
-Entramos al editor del tema de wordpress
+Entramos al editor del tema de wordpress, ell cual nos permite modificar los archivos PHP directamente en el navegador web.
 
 ![](https://github.com/academiasIT/ciberseguridad/blob/master/img/13-EditorWP.png)
 
-Ponemos un regalito (Shell reversa para php) en el `comments.php` y luego preparamos en la máquina atacante un listener para recibir la conexión remota.
+Ponemos un regalito ![Shell reversa para php](http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet) en el `comments.php` y luego preparamos en la máquina atacante un listener para recibir la conexión remota.
 
 ![](https://github.com/academiasIT/ciberseguridad/blob/master/img/14-ShellReversaPhp.png)
 
