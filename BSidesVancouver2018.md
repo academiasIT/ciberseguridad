@@ -130,6 +130,20 @@ Con la conexión reversa ya establecida, procedemos a utilizar el comando cat pa
 
 ![](https://github.com/academiasIT/ciberseguridad/blob/master/img/16-Cleanup.png)
 
+Entonces usaremos este archivo para generar una shell reversa con los persmisos de root. Para lograr este cometido, debemos pasar un archivo con la shell reversa en Python y luego reemplazar el contenido del archivo cleanup con la shell reversa.
+
+Para pasar el archivo, levantamos un servidor http en Kali Linux mediante la instrucción `service apache2 start` y procedemos a crear un archivo con el código fuente en Python de una shell reversa, que apunte a la IP `10.0.2.5` y al puerto `1111`.
+
+![](https://github.com/academiasIT/ciberseguridad/blob/master/img/17-ShellReversaPython.png)
+
+![](https://github.com/academiasIT/ciberseguridad/blob/master/img/18-SetReverseShell.png)
+
+![](https://github.com/academiasIT/ciberseguridad/blob/master/img/19-whoami.gif)
+
+![](https://github.com/academiasIT/ciberseguridad/blob/master/img/20-cambioClaveRoot.gif)
+
+![](https://github.com/academiasIT/ciberseguridad/blob/master/img/21-root.gif)
+
 ## Fase de Documentación
 
 
