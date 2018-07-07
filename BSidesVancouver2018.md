@@ -3,7 +3,7 @@
 
 # Taller de Hacking Ético - Los Ángeles - Julio 2018. 
 
-El fin de este taller práctico consiste en dar a conocer ciertas técnicas que permiten vulnerar la seguirdad de serviodes/servicios. Con ello poder dotar de conocimiento necesario para que los asistentes puedan asegurar su propia infraestructura.
+El fin de este taller práctico consiste en dar a conocer ciertas técnicas que permiten vulnerar la seguridad de serviodes/servicios. Con ello poder dotar del conocimiento necesario para que los asistentes, puedan asegurar su propia infraestructura.
 
 Este taller es con fines educacionales.
 
@@ -18,16 +18,14 @@ Particularmente se trabajará con los siguientes recursos:
 
 El objetivo principal consiste en ganar permisos de ROOT sobre la máquina victima.
 
-Dentro de un proceso de análisis de vulnerabilidades, es necesario seguir una metodología que permita hacer que el proceso sea repetible 
+Dentro de un proceso de análisis de vulnerabilidades, es necesario seguir una metodología que permita hacer que el proceso sea repetible por ello, el ataque se separa en las fases Recolección y Enumeración, Análisis, Explotación y Documentación.
 
 ## Fase de Recolección de Información y Enumeración
 
 Dentro de esta fase, es necesario tener en cuenta los datos de la máquina atacante como de la victima.
 Desde el punto de vista del atacante es necesario conocer la IP del segmento al que está conectado
 para poder revisar máquinas vulnerables.
-El comando en Linux para revisar la IP es ifconfig
-
-`# ifconfig`
+El comando en Linux para revisar la IP es: `# ifconfig`
 
 ![](https://github.com/academiasIT/ciberseguridad/blob/master/img/1-ifconfig.gif)
 Una vez que ya tenemos la ip, debemos revisar nuestro entorno de red mediante
