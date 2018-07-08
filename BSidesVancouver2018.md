@@ -3,7 +3,7 @@
 
 # Taller de Hacking Ético - Los Ángeles - Julio 2018. 
 
-El fin de este taller práctico consiste en dar a conocer ciertas técnicas que permiten vulnerar la seguridad de serviodes/servicios. Con ello poder dotar del conocimiento necesario para que los asistentes, puedan asegurar su propia infraestructura. Este taller es desarrollado solo con fines educacionales.
+El fin de este taller práctico consiste en dar a conocer ciertas técnicas que permiten vulnerar la seguridad de servidores/servicios. Con ello poder dotar del conocimiento necesario para que los asistentes, puedan asegurar su propia infraestructura. Este taller es desarrollado solo con fines educacionales.
 
 Particularmente se trabajará con los siguientes recursos:
 
@@ -36,16 +36,16 @@ Usamos el comando en consola de la siguiente manera:
 
 Recordar que los parámetros `-T4` hacen un escaneo rápido y `-sS` permite identificación de servicios asociados a los puertos.
 Como podemos ver en la salida del comando, se encontró la IP `10.0.2.8` con 3 puertos abiertos: `21, 22 y 80`.
-Como primer paso abrimos un navegador en Kali Linux y verificamos el sitio existe en la IP victima (puerto 80).
+Como primer paso abrimos un navegador en Kali Linux y verificamos el sitio existente en la IP victima (puerto 80).
 
 Lo único que encontramos, es la típica página indicando que existe un servidor web y se encuntra funcionando.
 
 ![](https://github.com/academiasIT/ciberseguridad/blob/master/img/3-webhttp.gif)
 
 Luego, entramos a verificar si existen archivos interesante en el servidor http. Esto se hace mediante el conjunto de herramientas o scripts del mismo nmap.
-usaremos el comando siguiente: `# nmap -script http-enum 10.0.2.8`
+Usaremos el comando siguiente: `# nmap -script http-enum 10.0.2.8`
 
-Este comando nos permite enumerar mediante fuerza bruta, los archivos presentes en el sitio web.
+El parámetro `http-enum` nos permite enumerar mediante fuerza bruta los archivos presentes en el sitio web.
 
 Si miramos con atención la salida del comando, nos damos cuenta que hay un archivo denominado `robots.txt`
 
@@ -162,4 +162,5 @@ En esta fase, se presenta un documento formal, como este mismo. Demostrando las 
 # ESTO ES EL FIN
 
 Cualquier duda, me contanctan en twitter en: @agustin_salas_f
+
 [Universidad Tecnológica de Chile INACAP](http://www.inacap.cl).
