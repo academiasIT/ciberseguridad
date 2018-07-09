@@ -11,7 +11,7 @@ Particularmente se trabajará con los siguientes recursos:
 1. 20 GB de espacio libre en Disco.
 1. VirtualBox Pre-Instalado.
 1. [Kali Linux](https://www.kali.org/downloads/) para su arquitectura.
-1. Maquina virtual Vulnerable [Descarga](https://download.vulnhub.com/bsidesvancouver2018/BSides-Vancouver-2018-Workshop.ova)
+1. Maquina virtual Vulnerable [Descarga](https://www.vulnhub.com/entry/bsides-vancouver-2018-workshop,231/)
 1. Las máquinas virtuales deben estar en una red común para poder conectarse.
 
 El objetivo principal consiste en ganar permisos de super usuario (ROOT) sobre la máquina victima.
