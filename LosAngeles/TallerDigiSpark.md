@@ -22,6 +22,8 @@ Debería quedar como se muestra en la siguiente foto:
 
 ![](https://github.com/academiasIT/ciberseguridad/blob/master/LosAngeles/img/DigiStump%20AVR.png)
 
+Finalmente vamos a *Tools -> Board -> Digispark (Default - 16.5mhz)*
+
 Luego de estos simples pasos, tenemos el ambiente preparado para poder comenzar a trabajar con nuestra tarjeta.
 
 ## Ejercicio 1: Hola INACAP
