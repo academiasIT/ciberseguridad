@@ -48,7 +48,7 @@ void loop() {
 ```
 
 ## Por el premio.
-## Desafío 2: Bajar un archivo 
+## Desafío 2: calcular 2+2 :P
 
 
 # ESTO ES EL FIN
