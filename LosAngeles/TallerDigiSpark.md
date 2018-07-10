@@ -2,6 +2,9 @@
 ![](http://cms-site.inacap.cl/Assets/portal/img/logo-negro.png)
 
 # Taller de Hacking con DigiSpark - Los Ángeles - Julio 2018. 
+
+INSTALAR [DRIVERS](https://github.com/digistump/DigistumpArduino/raw/master/tools/micronucleus-2.0a4-win.zip)
+
 Abrir el IDE Arduino como super usuario (Linux) o como Administrador (Windows), para luego entrar a:
 
 *File -> Preferences -> Additional Boards Manager URLs*
