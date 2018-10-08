@@ -59,3 +59,6 @@ void loop() {
 Cualquier duda, me contanctan en twitter en: @agustin_salas_f
 
 [Universidad Tecnológica de Chile INACAP](http://www.inacap.cl).
+
+# Charla Ultra Low Cost Hacking.
+https://www.youtube.com/watch?v=uXBYYiqxQOI
