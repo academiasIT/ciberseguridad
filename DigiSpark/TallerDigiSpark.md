@@ -2,9 +2,13 @@
 ![](http://cms-site.inacap.cl/Assets/portal/img/logo-negro.png)
 
 # Taller de Hacking con DigiSpark
-
+## NOTA PARA USUARIOS DE WINDOWS
 EN WINDOWS INSTALAR ESTOS [DRIVERS](https://github.com/digistump/DigistumpArduino/raw/master/tools/micronucleus-2.0a4-win.zip)
 
+## PASO 1
+Instalar el IDE de [Arduino](https://www.arduino.cc/en/main/software) para su sistema operativo.
+
+## PASO 2
 Abrir el IDE Arduino como super usuario (Linux) o como Administrador (Windows), para luego entrar a:
 
 *File -> Preferences -> Additional Boards Manager URLs*
@@ -15,6 +19,7 @@ La configuración debe quedar tal como se muestra en la imágen:
 
 ![](https://github.com/academiasIT/ciberseguridad/blob/master/LosAngeles/img/ide.jpg)
 
+## PASO 3
 Luego debemos agregar la tarjeta DigiSpark, mediante el administrador del IDE.
 
 *Tools-> Board -> Boards Manager*
@@ -25,6 +30,7 @@ Debería quedar como se muestra en la siguiente foto:
 
 ![](https://github.com/academiasIT/ciberseguridad/blob/master/LosAngeles/img/DigiStump%20AVR.png)
 
+## PASO 4
 Finalmente vamos a *Tools -> Board -> Digispark (Default - 16.5mhz)*
 
 Luego de estos simples pasos, tenemos el ambiente preparado para poder comenzar a trabajar con nuestra tarjeta.
