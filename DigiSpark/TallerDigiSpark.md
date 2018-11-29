@@ -6,7 +6,7 @@
 EN WINDOWS INSTALAR ESTOS [DRIVERS](https://github.com/digistump/DigistumpArduino/raw/master/tools/micronucleus-2.0a4-win.zip)
 
 ## PASO 1
-Instalar el IDE de [Arduino](https://www.arduino.cc/en/main/software) para su sistema operativo.
+Instalar el IDE de [Arduino](https://www.arduino.cc/en/Main/OldSoftwareReleases#previous) para su sistema operativo.
 
 ## PASO 2
 Abrir el IDE Arduino como super usuario (Linux) o como Administrador (Windows), para luego entrar a:
