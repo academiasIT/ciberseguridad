@@ -2,3 +2,161 @@
 ![](http://cms-site.inacap.cl/Assets/portal/img/logo-negro.png)
 
 # Cybersecurity Journals.
+
+[IEEE Transactions on Information Forensics and Security](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=10206)
+Abbreviation: TIFS
+Imprint: IEEE
+link: 
+Cite Score:
+Impact Factor: 5.8
+Index: 
+Comment: In spite of the name, this journal has articles in many areas of security, with only a slight emphasis on forensics. I'm not convinced the articles are consistently that impressive, but hey, it's an IEEE transaction, so it's got to be prestigious, right? 
+Computers & Security
+Abbreviation: COSE
+Imprint: Elsevier
+link: https://www.journals.elsevier.com/computers-and-security
+CiteScore: 3.86
+Impact Factor: 2.650
+Index: Egineering Index, Computer Sience Index, Scopus, Science Citation Index Expanded.
+Comment: I've reviewed a lot of articles for this journal and even published in it a few times. This one has a fairly annoying review process—both from the perspective of reviewer and reviewee. I've seen many cases where their reviewers obviously didn't bother to read the article they're supposedly reviewing. They also seem to take forever to make a decision. And you're unlikely to get the same reviewers for your revised article, which can result in another (interminable) iteration, just to resolve some trivialities. But, the bottom line is that they do have a high standard and generally only publish quality articles.
+
+
+Information and Computer Security
+
+Abbreviation: ICS
+Imprint: Emerald
+link: http://www.emeraldgrouppublishing.com/products/journals/journals.htm?id=ics
+Cite Score: 1.41
+Impact Factor:
+Index: Scopus
+Comment: This journal recently changed its name from Information Management & Computer Security, and it still seems to have more emphasis on the "management" aspects than most. Nevertheless, the articles usually have some technical depth. 
+
+Cryptologia (No aplica para publicación AIT)
+Abbreviation: none
+Imprint: Taylor & Francis
+Impact Factor:
+Index: ACM, CSA, ISI - Sience Citation Index Expanded.
+Comment: The emphasis is on historical ciphers. Generally, great fun to read and articles almost invariably provide a nice introduction to cryptography and/or a historical topic. 
+
+Journal of Cryptology (No aplica para publicación AIT)
+Abbreviation: JOC
+Imprint: Springer
+Comment: The ultimate modern cryptography journal, but definitely not for the faint of heart. 
+
+Journal of Cryptographic Engineering (No aplica para publicación AIT)
+Abbreviation: JCEN
+Imprint: Springer
+Comment: A fairly new journal that looks to have some interesting articles. 
+
+IEEE Transactions on Dependable and Secure Computing
+Abbreviation: TDSC
+Imprint: IEEE
+link: https://ieeexplore.ieee.org/servlet/opac?punumber=8858
+Cite Score: 
+Impact Factor: 4.41
+Index: 
+Comment: Contains a wide variety of articles, and most appear to be interesting and relevant. I definitely need to read this one more often. 
+
+ACM Transactions on Privacy and Security
+Abbreviation: Antes TISSEC, Hoy TOPS
+Imprint: ACM
+Comment: Covers a lot of different topics, usually from a rather theoretical point of view. 
+link: https://tops.acm.org/
+Cite Score:
+Impact Factor: 
+Index: SCOPUS
+
+Software: Practice and Experience
+Abbreviation: SPE
+Imprint: Wiley
+link: https://onlinelibrary.wiley.com/journal/1097024x
+Cite Score:
+Impact Factor: 1.338
+Comment: This is not a security journal, per se, but they do publish some articles that are security-related. I've reviewed a few articles for them recently, and those articles have all been first-rate. Perhaps the "strong law of small numbers" is at work here, but I certainly have a good impression of this journal. 
+
+RELATIVAMENTE BUENOS
+
+Journal of Computer Virology and Hacking Techniques (formerly Journal in Computer Virology, thus "JICV")
+Abbreviation: JICV
+Imprint: Springer
+link: https://www.springer.com/computer/journal/11416
+Cite Score: 1.38
+Impact Factor: 1.024
+Index: SCOPUS
+Comment: This is the only journal that I know of that is focused primarily on malware. Articles tend to be of a reasonable quality with a mix of theory and application. I don't see much here that I'd consider "hacking techniques", but it's notoriously difficult to present those kinds of topics as academic research. Note that I used to have this one rated as "good", but I've submitted a couple of papers here recently that came back with rather strange and/or (virtually) non-existent reviews, as if the supposed reviewer could not be bothered to look at the paper. So it seems to me that their review process has some issues. 
+
+Information Security Journal: A Global Perspective
+Abbreviation: ISJ
+Imprint: Taylor & Francis
+link: https://www.tandfonline.com/action/journalInformation?journalCode=uiss20
+Cite Score:
+Impact Factor: 
+Index: 
+Comment: Articles here seem to be of reasonably consistent quality, and they cover a wide range of interesting and relevant topics. Formerly, I was impressed by their review process, but recently it seems to have become more hit-and-miss. 
+
+IET Information Security
+Abbreviation: IETIS
+Imprint: IET
+link: https://digital-library.theiet.org/content/journals/iet-ifs
+Cite Score: 1.86
+Impact Factor: 0.890
+Index: 
+Comment: The editorial board is focused on cryptography. Not surprisingly, recent articles tend to be heavy on cryptography, or similar. 
+
+
+International Journal of Information Security
+Abbreviation: IJIS
+Imprint: Springer
+Comment: Top-heavy with theory. 
+link: https://link.springer.com/journal/10207
+Cite Score: 
+Impact Factor: 1.658 
+Index: 
+
+Journal of Information Assurance and Security
+Abbreviation: JIAS
+Imprint: Dynamic Publishers, Inc.
+link: http://www.mirlabs.org/jias/
+Cite Score: 
+Impact Factor:
+Index: 
+Comment: Looks like an interesting mix of articles. However, in general, I'd suggest a lot of skepticism when it comes to cryptography articles published in general security journals, and this journal has several recent cryptography-related articles. So, reader beware. 
+
+Journal of Computer Security
+Abbreviation: JCS
+Imprint: IOS Press
+Comment: From my perspective, this looks to be way too theoretical. But that's the way some people like their security. 
+link: https://www.iospress.nl/journal/journal-of-computer-security/
+Cite Score:
+Impact Factor: 
+Index: Scopus, Web of Science: BIOSIS Previews, Web of Science: Emerging Sources Citation Index
+
+
+International Journal of Security and Networks
+Abbreviation: IJSN
+Imprint: Inderscience Publishers
+link: https://www.inderscience.com/jhome.php?jcode=ijsn
+Cite Score:
+Impact Factor:
+Index: Scopus
+Comment: Seems to be a pretty solid journal, especially for one without a big-name publisher behind it. 
+
+
+International Journal of Electronic Security and Digital Forensics
+Abbreviation: IJESDF
+Imprint: Inderscience Publishers
+link: https://www.inderscience.com/jhome.php?jcode=ijesdf
+Cite Score:
+Impact Factor:
+Index: Scopus
+Comment: Another respectable security journal from Inderscience. 
+
+
+International Journal of Information Privacy, Security and Integrity
+Abbreviation: IJIPSI
+Imprint: Inderscience Publishers
+links: https://www.inderscience.com/jhome.php?jcode=ijipsi#edboard-content
+Cite Score:
+Impact Factor:
+Index: 
+Comment: Fairly new and looks to be OK. 
