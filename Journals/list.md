@@ -9,7 +9,7 @@ we extend with some other minor details.
 
 
 Abbreviation | Imprint       |Cite Score     |Impact Factor  |Index        |
------------- | ------------- | ------------- | ------------- |-------------|  
+------------ | ------------- | :-----------: | :-----------: |-------------|  
  TIFS        | IEEE          |               |5.8            |             |
 
 
@@ -19,15 +19,10 @@ Comment: In spite of the name, this journal has articles in many areas of securi
 ## [Computers & Security](https://www.journals.elsevier.com/computers-and-security)
 
 Abbreviation | Imprint       |Cite Score     |Impact Factor  |Index        |
------------- | ------------- | :-----------: | ------------- |-------------|  
- COSE        | Elsevier      | 3.86          |5.8            |             |
+------------ | ------------- | :-----------: | :-----------: |:-----------:|  
+ COSE        | Elsevier      | 3.86          |2.650          |Egineering Index, Computer Sience Index, Scopus, Science Citation Index Expanded             |
  
-Abbreviation: COSE
-Imprint: Elsevier
-link: https://www.journals.elsevier.com/computers-and-security
-CiteScore: 3.86
-Impact Factor: 2.650
-Index: Egineering Index, Computer Sience Index, Scopus, Science Citation Index Expanded.
+
 Comment: I've reviewed a lot of articles for this journal and even published in it a few times. This one has a fairly annoying review process—both from the perspective of reviewer and reviewee. I've seen many cases where their reviewers obviously didn't bother to read the article they're supposedly reviewing. They also seem to take forever to make a decision. And you're unlikely to get the same reviewers for your revised article, which can result in another (interminable) iteration, just to resolve some trivialities. But, the bottom line is that they do have a high standard and generally only publish quality articles.
 
 
