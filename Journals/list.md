@@ -8,15 +8,20 @@ we extend with some other minor details.
 ## [IEEE Transactions on Information Forensics and Security](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=10206)
 
 
-Abbreviation | Imprint       |link           |Cite Score     |Impact Factor  |Index        |
------------- | ------------- | ------------- | ------------- | ------------- |-------------|  
- TIFS        | IEEE          |               |               |5.8            |             |
+Abbreviation | Imprint       |Cite Score     |Impact Factor  |Index        |
+------------ | ------------- | ------------- | ------------- |-------------|  
+ TIFS        | IEEE          |               |5.8            |             |
 
 
 Comment: In spite of the name, this journal has articles in many areas of security, with only a slight emphasis on forensics. I'm not convinced the articles are consistently that impressive, but hey, it's an IEEE transaction, so it's got to be prestigious, right? 
 
 
-## Computers & Security
+## [Computers & Security](https://www.journals.elsevier.com/computers-and-security)
+
+Abbreviation | Imprint       |Cite Score     |Impact Factor  |Index        |
+------------ | ------------- | :-----------: | ------------- |-------------|  
+ COSE        | Elsevier      | 3.86          |5.8            |             |
+ 
 Abbreviation: COSE
 Imprint: Elsevier
 link: https://www.journals.elsevier.com/computers-and-security
