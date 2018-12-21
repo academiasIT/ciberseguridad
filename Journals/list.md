@@ -51,7 +51,7 @@ Comment: A fairly new journal that looks to have some interesting articles.
 ## [IEEE Transactions on Dependable and Secure Computing](https://ieeexplore.ieee.org/servlet/opac?punumber=8858)
 Abbreviation | Imprint       |Cite Score     |Impact Factor  |Index        |
 ------------ | ------------- | :-----------: | :-----------: |-------------|  
- TDSC        | IEEE          | 4.41          |               |Scopus       |
+ TDSC        | IEEE          | 4.41          |               |             |
 
 Comment: Contains a wide variety of articles, and most appear to be interesting and relevant. I definitely need to read this one more often. 
 
@@ -63,7 +63,7 @@ Abbreviation | Imprint       |Cite Score     |Impact Factor  |Index        |
 Comment: Covers a lot of different topics, usually from a rather theoretical point of view. 
 
 
-## Software: Practice and Experience
+## [Software: Practice and Experience](https://onlinelibrary.wiley.com/journal/1097024x)
 Abbreviation | Imprint       |Cite Score     |Impact Factor  |Index        |
 ------------ | ------------- | :-----------: | :-----------: |-------------|  
  SPE         | Wiley         |               | 1.338         |             |
@@ -72,21 +72,21 @@ Comment: This is not a security journal, per se, but they do publish some articl
 
 # OK Journals.
 
-## Journal of Computer Virology and Hacking Techniques (formerly Journal in Computer Virology, thus "JICV")
+## [Journal of Computer Virology and Hacking Techniques (formerly Journal in Computer Virology, thus "JICV")](https://www.springer.com/computer/journal/11416)
 Abbreviation | Imprint       |Cite Score     |Impact Factor  |Index        |
 ------------ | ------------- | :-----------: | :-----------: |-------------|  
  JICV        | Springer      | 1.38          | 1.024         |Scopus       |
  
 Comment: This is the only journal that I know of that is focused primarily on malware. Articles tend to be of a reasonable quality with a mix of theory and application. I don't see much here that I'd consider "hacking techniques", but it's notoriously difficult to present those kinds of topics as academic research. Note that I used to have this one rated as "good", but I've submitted a couple of papers here recently that came back with rather strange and/or (virtually) non-existent reviews, as if the supposed reviewer could not be bothered to look at the paper. So it seems to me that their review process has some issues. 
 
-## Information Security Journal: A Global Perspective
+## [Information Security Journal: A Global Perspective](https://www.tandfonline.com/toc/uiss20/current)
 Abbreviation | Imprint          |Cite Score     |Impact Factor  |Index        |
 ------------ | -------------    | :-----------: | :-----------: |-------------|  
  ISJ         | Taylor & Francis |               |               |             |
  
 Comment: Articles here seem to be of reasonably consistent quality, and they cover a wide range of interesting and relevant topics. Formerly, I was impressed by their review process, but recently it seems to have become more hit-and-miss. 
 
-## IET Information Security
+## [IET Information Security](https://digital-library.theiet.org/content/journals/iet-ifs)
 Abbreviation | Imprint          |Cite Score     |Impact Factor  |Index        |
 ------------ | -------------    | :-----------: | :-----------: |-------------|  
  IETIS       | IET              | 1.86          | 0.890         |             | 
@@ -101,10 +101,10 @@ Abbreviation | Imprint          |Cite Score     |Impact Factor  |Index        |
  
 Comment: Top-heavy with theory. 
 
-## Journal of Information Assurance and Security
+## [Journal of Information Assurance and Security](http://www.mirlabs.org/jias/)
 Abbreviation | Imprint                     |Cite Score     |Impact Factor  |Index        |
 ------------ | -------------               | :-----------: | :-----------: |-------------|  
- JIAS        | Dynamic Publishers, Inc.    |               |               |             | 
+ JIAS        | Dynamic Publishers, Inc.    |               |               | Emerging Sources Citation Index, Google Scholar, and INSPEC             | 
 
 Comment: Looks like an interesting mix of articles. However, in general, I'd suggest a lot of skepticism when it comes to cryptography articles published in general security journals, and this journal has several recent cryptography-related articles. So, reader beware. 
 
@@ -115,10 +115,10 @@ Abbreviation | Imprint                |Cite Score     |Impact Factor  |Index    
  
 Comment: From my perspective, this looks to be way too theoretical. But that's the way some people like their security. 
 
-## International Journal of Security and Networks
+## [International Journal of Security and Networks](https://www.inderscience.com/jhome.php?jcode=ijsn)
 Abbreviation | Imprint                     |Cite Score     |Impact Factor  |Index        |
 ------------ | -------------               | :-----------: | :-----------: |-------------|  
- IJSN        | Inderscience Publishers     |               |               |             | 
+ IJSN        | Inderscience Publishers     |               |               |Scopus       | 
 
 Comment: Seems to be a pretty solid journal, especially for one without a big-name publisher behind it. 
 
@@ -126,7 +126,7 @@ Comment: Seems to be a pretty solid journal, especially for one without a big-na
 ## [International Journal of Electronic Security and Digital Forensics](https://www.inderscience.com/jhome.php?jcode=ijesdf)
 Abbreviation | Imprint                     |Cite Score     |Impact Factor  |Index        |
 ------------ | -------------               | :-----------: | :-----------: |-------------|  
- IJESDF      | Inderscience Publishers     |               |               |             | 
+ IJESDF      | Inderscience Publishers     |               |               |Scopus       | 
 
 Comment: Another respectable security journal from Inderscience. 
 
