@@ -64,97 +64,76 @@ Comment: Covers a lot of different topics, usually from a rather theoretical poi
 
 
 ## Software: Practice and Experience
-Abbreviation: SPE
-Imprint: Wiley
-link: https://onlinelibrary.wiley.com/journal/1097024x
-Cite Score:
-Impact Factor: 1.338
+Abbreviation | Imprint       |Cite Score     |Impact Factor  |Index        |
+------------ | ------------- | :-----------: | :-----------: |-------------|  
+ SPE         | Wiley         |               | 1.338         |             |
+ 
 Comment: This is not a security journal, per se, but they do publish some articles that are security-related. I've reviewed a few articles for them recently, and those articles have all been first-rate. Perhaps the "strong law of small numbers" is at work here, but I certainly have a good impression of this journal. 
 
 # OK Journals.
 
 ## Journal of Computer Virology and Hacking Techniques (formerly Journal in Computer Virology, thus "JICV")
-Abbreviation: JICV
-Imprint: Springer
-link: https://www.springer.com/computer/journal/11416
-Cite Score: 1.38
-Impact Factor: 1.024
-Index: SCOPUS
+Abbreviation | Imprint       |Cite Score     |Impact Factor  |Index        |
+------------ | ------------- | :-----------: | :-----------: |-------------|  
+ JICV        | Springer      | 1.38          | 1.024         |Scopus       |
+ 
 Comment: This is the only journal that I know of that is focused primarily on malware. Articles tend to be of a reasonable quality with a mix of theory and application. I don't see much here that I'd consider "hacking techniques", but it's notoriously difficult to present those kinds of topics as academic research. Note that I used to have this one rated as "good", but I've submitted a couple of papers here recently that came back with rather strange and/or (virtually) non-existent reviews, as if the supposed reviewer could not be bothered to look at the paper. So it seems to me that their review process has some issues. 
 
 ## Information Security Journal: A Global Perspective
-Abbreviation: ISJ
-Imprint: Taylor & Francis
-link: https://www.tandfonline.com/action/journalInformation?journalCode=uiss20
-Cite Score:
-Impact Factor: 
-Index: 
+Abbreviation | Imprint          |Cite Score     |Impact Factor  |Index        |
+------------ | -------------    | :-----------: | :-----------: |-------------|  
+ ISJ         | Taylor & Francis |               |               |             |
+ 
 Comment: Articles here seem to be of reasonably consistent quality, and they cover a wide range of interesting and relevant topics. Formerly, I was impressed by their review process, but recently it seems to have become more hit-and-miss. 
 
 ## IET Information Security
-Abbreviation: IETIS
-Imprint: IET
-link: https://digital-library.theiet.org/content/journals/iet-ifs
-Cite Score: 1.86
-Impact Factor: 0.890
-Index: 
+Abbreviation | Imprint          |Cite Score     |Impact Factor  |Index        |
+------------ | -------------    | :-----------: | :-----------: |-------------|  
+ IETIS       | IET              | 1.86          | 0.890         |             | 
+
 Comment: The editorial board is focused on cryptography. Not surprisingly, recent articles tend to be heavy on cryptography, or similar. 
 
 
-## International Journal of Information Security
-Abbreviation: IJIS
-Imprint: Springer
+## [International Journal of Information Security](https://link.springer.com/journal/10207)
+Abbreviation | Imprint          |Cite Score     |Impact Factor  |Index        |
+------------ | -------------    | :-----------: | :-----------: |-------------|  
+ IJIS        | Springer         |               | 1.658         |             | 
+ 
 Comment: Top-heavy with theory. 
-link: https://link.springer.com/journal/10207
-Cite Score: 
-Impact Factor: 1.658 
-Index: 
 
 ## Journal of Information Assurance and Security
-Abbreviation: JIAS
-Imprint: Dynamic Publishers, Inc.
-link: http://www.mirlabs.org/jias/
-Cite Score: 
-Impact Factor:
-Index: 
+Abbreviation | Imprint                     |Cite Score     |Impact Factor  |Index        |
+------------ | -------------               | :-----------: | :-----------: |-------------|  
+ JIAS        | Dynamic Publishers, Inc.    |               |               |             | 
+
 Comment: Looks like an interesting mix of articles. However, in general, I'd suggest a lot of skepticism when it comes to cryptography articles published in general security journals, and this journal has several recent cryptography-related articles. So, reader beware. 
 
-## Journal of Computer Security
-Abbreviation: JCS
-Imprint: IOS Press
+## [Journal of Computer Security](https://www.iospress.nl/journal/journal-of-computer-security/)
+Abbreviation | Imprint                |Cite Score     |Impact Factor  |Index        |
+------------ | -------------          | :-----------: | :-----------: |-------------|  
+ JCS         | IOS Press              |               |               |Scopus, Web of Science: BIOSIS Previews, Web of Science: Emerging Sources Citation Index             | 
+ 
 Comment: From my perspective, this looks to be way too theoretical. But that's the way some people like their security. 
-link: https://www.iospress.nl/journal/journal-of-computer-security/
-Cite Score:
-Impact Factor: 
-Index: Scopus, Web of Science: BIOSIS Previews, Web of Science: Emerging Sources Citation Index
-
 
 ## International Journal of Security and Networks
-Abbreviation: IJSN
-Imprint: Inderscience Publishers
-link: https://www.inderscience.com/jhome.php?jcode=ijsn
-Cite Score:
-Impact Factor:
-Index: Scopus
+Abbreviation | Imprint                     |Cite Score     |Impact Factor  |Index        |
+------------ | -------------               | :-----------: | :-----------: |-------------|  
+ IJSN        | Inderscience Publishers     |               |               |             | 
+
 Comment: Seems to be a pretty solid journal, especially for one without a big-name publisher behind it. 
 
 
-## International Journal of Electronic Security and Digital Forensics
-Abbreviation: IJESDF
-Imprint: Inderscience Publishers
-link: https://www.inderscience.com/jhome.php?jcode=ijesdf
-Cite Score:
-Impact Factor:
-Index: Scopus
+## [International Journal of Electronic Security and Digital Forensics](https://www.inderscience.com/jhome.php?jcode=ijesdf)
+Abbreviation | Imprint                     |Cite Score     |Impact Factor  |Index        |
+------------ | -------------               | :-----------: | :-----------: |-------------|  
+ IJESDF      | Inderscience Publishers     |               |               |             | 
+
 Comment: Another respectable security journal from Inderscience. 
 
 
-## International Journal of Information Privacy, Security and Integrity
-Abbreviation: IJIPSI
-Imprint: Inderscience Publishers
-links: https://www.inderscience.com/jhome.php?jcode=ijipsi#edboard-content
-Cite Score:
-Impact Factor:
-Index: 
+## [International Journal of Information Privacy, Security and Integrity](https://www.inderscience.com/jhome.php?jcode=ijipsi#edboard-content)
+Abbreviation | Imprint                     |Cite Score     |Impact Factor  |Index        |
+------------ | -------------               | :-----------: | :-----------: |-------------|  
+ IJIPSI      | Inderscience Publishers     |               |               |             | 
+ 
 Comment: Fairly new and looks to be OK. 
-S
